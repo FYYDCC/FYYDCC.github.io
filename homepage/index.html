@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chao Chen</title>
+<meta name="description" content="Chao Chen - MPhil student at HKUST (GZ), working on multimodal LLMs, agents, and LLM post-training.">
+<style>
+  :root {
+    --text: #222;
+    --muted: #666;
+    --accent: #1a5fb4;
+    --border: #e5e5e5;
+    --tag-bg: #eef3fb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    background: #fff;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .inner {
+    max-width: 880px; margin: 0 auto; padding: 12px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  nav .brand { font-weight: 600; color: var(--text); }
+  nav .links a { margin-left: 20px; color: var(--muted); font-size: 15px; }
+  nav .links a:hover { color: var(--accent); text-decoration: none; }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 24px 64px; }
+  .profile { display: flex; gap: 32px; align-items: flex-start; }
+  .profile img {
+    width: 170px; height: 170px; object-fit: cover;
+    border-radius: 8px; flex-shrink: 0; background: #f2f2f2;
+  }
+  .profile h1 { margin: 0 0 4px; font-size: 32px; font-weight: 600; }
+  .profile .contact { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+  .profile .contact a { margin-right: 14px; }
+  h2 {
+    font-size: 22px; font-weight: 600; margin: 40px 0 14px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+  .news { list-style: none; padding: 0; margin: 0; }
+  .news li { display: flex; gap: 16px; padding: 4px 0; }
+  .news .date { color: var(--muted); min-width: 80px; font-variant-numeric: tabular-nums; }
+  .pub { display: flex; gap: 16px; margin-bottom: 18px; }
+  .pub .venue {
+    flex-shrink: 0; width: 96px; height: fit-content;
+    text-align: center; font-size: 13px; font-weight: 600;
+    background: var(--tag-bg); color: var(--accent);
+    border-radius: 4px; padding: 3px 6px;
+  }
+  .pub .venue.sub { background: #f3f3f3; color: var(--muted); }
+  .pub .title { font-weight: 600; }
+  .pub .authors { font-size: 15px; }
+  .pub .meta { font-size: 15px; color: var(--muted); font-style: italic; }
+  .pub .btns a {
+    display: inline-block; font-size: 13px; margin-right: 6px; margin-top: 4px;
+    border: 1px solid var(--accent); border-radius: 4px; padding: 0 8px;
+  }
+  .pub .btns a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+  .me { font-weight: 600; text-decoration: underline; }
+  .entry { margin-bottom: 14px; }
+  .entry .head { display: flex; justify-content: space-between; flex-wrap: wrap; }
+  .entry .head .when { color: var(--muted); }
+  .entry .sub { color: var(--muted); font-size: 15px; }
+  footer { text-align: center; color: #999; font-size: 13px; margin-top: 48px; }
+  @media (max-width: 640px) {
+    .profile { flex-direction: column; align-items: center; text-align: center; }
+    nav .links { display: none; }
+    .pub { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <span class="brand">Chao Chen</span>
+    <span class="links">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#service">Service</a>
+    </span>
+  </div>
+</nav>
+
+<main>
+  <section id="about" class="profile">
+    <img src="avatar.jpg" alt="Chao Chen">
+    <div>
+      <h1>Chao Chen</h1>
+      <div class="contact">
+        <a href="mailto:cchendg@connect.hkust-gz.edu.cn">Email</a>
+        <a href="https://github.com/FYYDCC">GitHub</a>
+        <a href="cv.pdf">CV</a>
+      </div>
+      <p>
+        I am an MPhil student in Data Science and Analytics at
+        <a href="https://www.hkust-gz.edu.cn/">The Hong Kong University of Science and Technology (Guangzhou)</a>,
+        advised by <a href="https://cartus.github.io/">Prof. Zhijiang Guo</a> and co-advised by
+        <a href="https://scholar.google.com/citations?user=kwWyE2cAAAAJ&hl=en">Dr. Sibo Song</a> (Qwen-VL Team, Alibaba).
+        I will continue as a PhD student in the same group from 2027.
+        I am currently a research intern at Huawei (Yinwang) 2030 Lab, working with
+        <a href="http://yinhongliu.com/">Dr. Yinhong Liu</a> and
+        <a href="https://liuquncn.github.io/index_zh.html">Prof. Qun Liu</a>.
+        Previously, I received my B.Eng. in Software Engineering from Shanghai Jiao Tong University,
+        advised by <a href="https://guxd.github.io/">Prof. Xiaodong Gu</a>.
+      </p>
+      <p>
+        My research focuses on <b>multimodal LLMs and agents</b> and <b>LLM post-training</b> (SFT, RLVR, GRPO),
+        including executable environment and data synthesis with verifiable feedback for agentic RL,
+        and multimodal (vision&ndash;text) reasoning.
+      </p>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">2026.08</span><span><a href="https://arxiv.org/abs/2606.13106">SWITCH</a> is accepted to Findings of EMNLP 2026.</span></li>
+      <li><span class="date">2026.07</span><span>Joined Huawei (Yinwang) 2030 Lab as a research intern.</span></li>
+      <li><span class="date">2026.04</span><span><a href="https://arxiv.org/abs/2510.12603">IVT-LR</a> is accepted to Findings of ACL 2026.</span></li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p class="sub" style="color:var(--muted);font-size:14px;margin-top:-6px;">* Equal contribution &nbsp; &Dagger; Corresponding author</p>
+
+    <div class="pub">
+      <span class="venue">ACL 2026</span>
+      <div>
+        <div class="title">Reasoning in the Dark: Interleaved Vision&ndash;Text Reasoning in Latent Space</div>
+        <div class="authors"><span class="me">Chao Chen</span>, Zhixin Ma, Yongqi Li&Dagger;, Yupeng Hu, Yinwei Wei, Wenjie Li, Liqiang Nie</div>
+        <div class="meta">Findings of the Association for Computational Linguistics (ACL 2026)</div>
+        <div class="btns"><a href="https://arxiv.org/abs/2510.12603">Paper</a><a href="https://github.com/FYYDCC/IVT-LR">Code</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <span class="venue">EMNLP 2026</span>
+      <div>
+        <div class="title">Demystifying Hidden-State Recurrence: Switchable Latent Reasoning with On-Policy Reinforcement Learning</div>
+        <div class="authors">Jiayu Yang*, <span class="me">Chao Chen</span>*, Shengen Wu*, Yinhong Liu, Yuxuan Fan, Lujundong Li, Songning Lai, Chengwei Qin, Zhijiang Guo</div>
+        <div class="meta">Findings of the Association for Computational Linguistics (EMNLP 2026)</div>
+        <div class="btns"><a href="https://arxiv.org/abs/2606.13106">Paper</a><a href="https://github.com/LARK-AI-Lab/SWITCH">Code</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <span class="venue sub">Preprint</span>
+      <div>
+        <div class="title">From Trainee to Trainer: LLM-Designed Training Environment for RL with Multi-Agent Reasoning</div>
+        <div class="authors"><span class="me">Chao Chen</span>, Chengzu Li, Zhiwei Li, Yinhong Liu, Zhijiang Guo</div>
+        <div class="meta">In submission</div>
+        <div class="btns"><a href="https://arxiv.org/abs/2606.17682">Paper</a><a href="https://github.com/LARK-AI-Lab/Trainee-to-Trainer">Code</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <span class="venue sub">Preprint</span>
+      <div>
+        <div class="title">Data-centric Recursive Improvement for Foundation Models: A Survey</div>
+        <div class="authors">Yanyan Zou, <span class="me">Chao Chen</span>, Tung Sum Thomas Kwok, Jiayu Yang, Yunyun Hou, Jingmin Zhu, Zehang Luo, Shengjie Li, Yinhong Liu, Yingjia Wan, Chengzu Li, Tao Yu, Zhijiang Guo, Jiachen Liu, Sirui Wang, Nan Duan</div>
+        <div class="meta">In submission</div>
+        <div class="btns"><a href="https://www.preprints.org/frontend/manuscript/73ec1047c4c2dee09017c03159e43600/download_pub">Paper</a></div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <span class="venue sub">Preprint</span>
+      <div>
+        <div class="title">EnvFactory: Scaling Tool-Use Agents via Executable Environments Synthesis and Robust RL</div>
+        <div class="authors">Minrui Xu*, Zilin Wang*, Mengyi Deng, Zhiwei Li, Zhicheng Yang, Xiao Zhu, Yinhong Liu, Boyu Zhu, Baiyu Huang, <span class="me">Chao Chen</span>, Heyuan Deng, Fei Mi, Lifeng Shang, Xingshan Zeng&Dagger;, Zhijiang Guo&Dagger;</div>
+        <div class="meta">In submission</div>
+        <div class="btns"><a href="https://arxiv.org/abs/2605.18703">Paper</a><a href="https://github.com/LARK-AI-Lab/EnvFactory">Code</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="head"><b>Huawei (Yinwang), 2030 Lab &mdash; Research Intern</b><span class="when">2026.07 &ndash; Present</span></div>
+      <div class="sub">Supervised by <a href="http://yinhongliu.com/">Dr. Yinhong Liu</a> &amp; <a href="https://liuquncn.github.io/index_zh.html">Prof. Qun Liu</a></div>
+      <div>Improving the rotary position embedding (RoPE) of omni-modal models to preserve precise temporal alignment across modalities under token compression.</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="head"><b>The Hong Kong University of Science and Technology (Guangzhou)</b><span class="when">2027 &ndash; 2030</span></div>
+      <div class="sub">PhD in Data Science and Analytics (Incoming)</div>
+    </div>
+    <div class="entry">
+      <div class="head"><b>The Hong Kong University of Science and Technology (Guangzhou)</b><span class="when">2025 &ndash; 2027</span></div>
+      <div class="sub">MPhil in Data Science and Analytics</div>
+    </div>
+    <div class="entry">
+      <div class="head"><b>Shanghai Jiao Tong University</b><span class="when">2021 &ndash; 2025</span></div>
+      <div class="sub">B.Eng. in Software Engineering</div>
+    </div>
+  </section>
+
+  <section id="service">
+    <h2>Service &amp; Awards</h2>
+    <ul>
+      <li>Reviewer, AI4Math Workshop @ ICML 2026</li>
+      <li>CASC Scholarship, Shanghai Jiao Tong University (Top 1%), 2023</li>
+      <li>Third Prize, 3rd ICDT Technology Competition, 2024</li>
+    </ul>
+  </section>
+
+  <footer>Last updated: Oct 2026</footer>
+</main>
+
+</body>
+</html>
